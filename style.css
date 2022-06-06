@@ -1,0 +1,107 @@
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+
+h1{
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    user-select: none;
+    scroll-behavior: smooth;
+    background-image: url("image.jpg");
+}
+img{
+    opacity: 1;
+}
+.reg-form{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    border-radius: 20px;
+    border-width: 10px;
+    background: white;
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+input{
+    border-radius: 5px;
+    border-color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    box-shadow: #000;
+    
+}
+
+input:hover{
+    border: 3px solid #7CFC00 ;
+}
+
+option{
+    border-color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    box-shadow: #000;
+}
+
+input[type=text]:focus {
+    margin-left: 2rem;
+    border: 3px solid #7CFC00 ;
+  }
+
+input[type=number]:focus {
+    margin-left: 2rem;
+    border: 3px solid #7CFC00 ;
+  }
+
+input[type=date]:focus {
+    margin-left: 2rem;
+    border: 3px solid #7CFC00 ;
+  }
+
+#education:focus{
+    border-radius: 5px;
+    margin-left: 2rem;
+    border: 3px solid #7CFC00 ;
+}
+#education:hover{
+    border: 3px solid #7CFC00 ;
+}
+
+#webdev,#ml,#dl,#web-scraping, #ds{
+    margin-left: 3rem;
+}
+
+#c,#cc,#java,#html,#css,#javascript{
+    margin-left: 3rem;
+}
+.fname{
+    margin-left: 1rem;
+}
+.submit{
+    margin-left: 1rem;
+    border-radius: 5px;
+    box-shadow: #000;
+}
+
+.submit:hover{
+    font-weight: 500;
+    border-color: #7CFC00;
+}
+
+.reset{
+    margin-left: 1rem;
+    border-radius: 5px;
+    box-shadow: #000;
+}
+.reset:hover{
+    font-weight: 500;
+    border-color: #7CFC00;
+}
