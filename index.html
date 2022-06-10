@@ -16,42 +16,42 @@
 <body>
     <div class="container">
         <div form method="" action="" class="reg-form d-flex justify-content-center border border-success" >
-    <form><br>
+    <form name="froms" id="forms" onsubmit="return formValidation()"><br>
         <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname" onsubmit="validate()"><br><br>
+        <input type="text" id="fname" name="fname" ><br><br>
 
         <label for="lname">Last Name:</label><br>
         <input type="text" id="lname" name="lname"><br><br>
 
-        <label for="Age">Age:</label><br>
-        <input type="number" id="age" name="age"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="0" max="99"><br><br>
 
-        <label for="age">Education:</label><br>
-    <select name="education" id="education"><br>
-        <option value="choose">--choose--</option>
+        <label for="education">Education:</label><br>
+        <select name="education" id="education" >
+        <option value="">Select</option>
         <option value="ug">Undergraduate</option>
         <option value="pg">Postgraduate</option>
     </select><br><br>
 
-        <label for="prog-name">Programme Name:</label><br>
-        <input type="text" id="prog-name" name="prog-name"><br><br>
+        <label for="prog">Programme Name:</label><br>
+        <input type="text" id="prog" name="prog"><br><br>
 
         <label for="college">College:</label><br>
         <input type="text" id="college" name="college"><br><br>
 
-        <label for="year-of-grad">Year of Grduation:</label><br>
-        <input type="date" id="year-of-grad" name="year-of-grad"><br><br>
+        <label for="year-of-grad" >Year of Grduation:</label><br>
+        <input type="date" id="year-of-grad" name="year-of-grad" min="2022-06-10" max="2026-12-31" required><br><br>
    
         <label for="course">Select Course:</label><br>
-        <input type="radio" name="course-select" id="webdev">
+        <input type="radio" name="course" id="webdev" value="webdev">
         <label for="webdev">Web Development</label><br>
-        <input type="radio" name="course-select" id="ml">
+        <input type="radio" name="course" id="ml" value="ml">
         <label for="ml">Machine Learning  </label><br>
-        <input type="radio" name="course-select" id="dl">
+        <input type="radio" name="course" id="dl" value="dl">
         <label for="dl">Deep Learning</label><br>
-        <input type="radio" name="course-select" id="web-scraping">
+        <input type="radio" name="course" id="web-scraping" value="web-scraping">
         <label for="web-scraping">Web Scraping</label><br>
-        <input type="radio" name="course-select" id="ds">
+        <input type="radio" name="course" id="ds" value="ds">
         <label for="ds">Data Science</label><br><br>
     
         <label for="skills">Skills:</label><br>
@@ -67,12 +67,12 @@
         <label for="css">CSS</label><br>
         <input type="checkbox" name="javascript" id="javascript">
         <label for="javascript">Javascript</label><br><br>
-        <button class="submit">Submit</button>
-        <button class="reset">Reset</button>
+        <button type="submit" class="submit">Submit</button>
+        <button class="reset" onClick="window.location.reload();">Reset</button>
       </form>
     </div>
     </div>
-    <script type="text/javascript" src="script.js"></script> src="js/script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 
